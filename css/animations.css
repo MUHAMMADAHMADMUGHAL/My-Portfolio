@@ -1,0 +1,109 @@
+
+/* ==============================
+   1. PAGE LOADER
+============================== */
+
+.page-loader {
+    opacity: 1;
+    visibility: visible;
+}
+
+.page-loader.loaded {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+
+/* ==============================
+   2. SCROLL REVEAL ANIMATION
+============================== */
+
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* ==============================
+   3. HERO TEXT ANIMATION
+============================== */
+
+.hero-intro {
+    animation: slideUp 0.8s ease both;
+}
+
+.hero h1 {
+    animation: slideUp 1s ease both;
+}
+
+.hero-description {
+    animation: slideUp 1.2s ease both;
+}
+
+.hero-buttons {
+    animation: slideUp 1.4s ease both;
+}
+
+
+/* ==============================
+   4. FLOATING CARDS
+============================== */
+
+.card-code {
+    animation: floatCard 4s ease-in-out infinite;
+}
+
+.card-role {
+    animation: floatCard 4s ease-in-out infinite;
+    animation-delay: 1s;
+}
+
+
+/* ==============================
+   5. KEYFRAMES
+============================== */
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes floatCard {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+/* ==============================
+   6. REDUCE MOTION
+============================== */
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

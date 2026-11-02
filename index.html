@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HAFIZ MUHAMMAD HAMZA - Web Developer Portfolio">
+    <title>HAFIZ MUHAMMAD HAMZA | Web Developer</title>
+
+    <!-- Apply saved theme before the page paints (prevents a flash of the wrong theme) -->
+    <script>
+        (function () {
+            try {
+                var t = localStorage.getItem("portfolio-theme") || "dark";
+                document.documentElement.setAttribute("data-theme", t);
+            } catch (e) { }
+        })();
+    </script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Scroll progress bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Page Loader -->
+    <div class="page-loader" id="page-loader">
+        <span>HAFIZ<span class="accent">.</span>DEV</span>
+    </div>
+
+    <!-- ========== 1. NAVBAR ========== -->
+    <header class="header" id="header">
+        <nav class="navbar container">
+            <a href="#home" class="logo">HAFIZ<span class="accent">.</span>DEV</a>
+
+            <div class="nav-right">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light and dark mode"></button>
+                <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- ========== 2. HERO SECTION ========== -->
+        <section class="hero section" id="home">
+            <div class="hero-grid"></div>
+
+            <div class="container hero-container">
+                <div class="hero-content reveal">
+                    <span class="eyebrow">
+                        <span class="status-dot"></span>
+                        AVAILABLE FOR OPPORTUNITIES
+                    </span>
+
+                    <p class="hero-intro">HELLO, I'M HAFIZ MUHAMMAD HAMZA</p>
+
+                    <h1>
+                        I'M A WEB DEVELOPER
+                        <span class="gradient-text" id="animated-text">DIGITAL EXPERIENCES</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I build modern, responsive and user-friendly websites.
+                        I'm learning full-stack development to create websites that look great
+                        and work smoothly.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            View My Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+                    </div>
+
+                    <div class="hero-socials">
+                        <a href="https://github.com/MUHAMMADAHMADMUGHAL" target="_blank" rel="noopener noreferrer"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/hafiz-hamza-015848448" target="_blank"
+                            rel="noopener noreferrer" aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <span class="social-caption">FIND ME ONLINE</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal">
+                    <div class="hero-glow"></div>
+
+                    <div class="image-frame">
+                        <img src="assets/images/profile.jpg" alt="HAFIZ MUHAMMAD HAMZA - Web Developer"
+                            class="profile-image">
+                    </div>
+
+                    <div class="floating-card card-code">
+                        <i class="fa-solid fa-code"></i>
+                        <div>
+                            <strong>Clean Code</strong>
+                            <span>Built with care</span>
+                        </div>
+                    </div>
+
+                    <div class="floating-card card-role">
+                        <i class="fa-solid fa-laptop-code"></i>
+                        <div>
+                            <strong>Web Developer</strong>
+                            <span>Building for the web</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#about" class="scroll-indicator">
+                <span>SCROLL TO EXPLORE</span>
+                <i class="fa-solid fa-arrow-down"></i>
+            </a>
+        </section>
+
+        <!-- ========== 3. ABOUT ME ========== -->
+        <section class="section about-section" id="about">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">GET TO KNOW ME</span>
+                    <h2>About <span class="gradient-text">Me.</span></h2>
+                </div>
+
+                <div class="about-grid">
+                    <div class="about-content reveal">
+                        <h3>Learning to turn ideas into digital products.</h3>
+
+                        <p>
+                            I'm HAFIZ MUHAMMAD HAMZA, a web development student from Faisalabad. I have completed my
+                            core web development training at Corvit Institute, where I learned the fundamentals of
+                            building modern and responsive websites.
+                        </p>
+
+                        <p>
+                            My coding journey started with HTML and CSS, where I learned how to build web pages. Then I
+                            learned JavaScript to add interactivity to websites. Now, I have learned React, Node.js,
+                            Express and MongoDB to build complete, full-stack web applications.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            Let's work together
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="journey reveal">
+                        <div class="journey-item">
+                            <span class="journey-dot"></span>
+                            <div>
+                                <h4>Started Web Development</h4>
+                                <p>Learned HTML and CSS to structure and style web pages.</p>
+                            </div>
+                        </div>
+                        <div class="journey-item">
+                            <span class="journey-dot"></span>
+                            <div>
+                                <h4>Learned JavaScript</h4>
+                                <p>Started making pages interactive: calculators, forms and dashboards.</p>
+                            </div>
+                        </div>
+                        <div class="journey-item">
+                            <span class="journey-dot"></span>
+                            <div>
+                                <h4>Exploring Full-Stack</h4>
+                                <p>Learning React, Node.js, Express and MongoDB for complete applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 4. SKILLS ========== -->
+        <section class="section skills-section" id="skills">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">MY TOOLKIT</span>
+                    <h2>Skills & <span class="gradient-text">Technologies.</span></h2>
+                    <p>Technologies I have learned and actively work with.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <article class="skill-card reveal">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>HTML</h3>
+                        <p>Web page structure</p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <h3>CSS</h3>
+                        <p>Design and styling</p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <i class="fa-brands fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Website functionality</p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <i class="fa-brands fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                        <p>Responsive design</p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React</h3>
+                        <p>Frontend development</p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h3>Node.js & Express</h3>
+                        <p>Backend development</p>
+                    </article>
+
+                    <article class="skill-card reveal">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>MongoDB</h3>
+                        <p>Database</p>
+                    </article>
+                </div>
+
+                <p class="skills-note reveal">
+                    Only the technologies I have learned or am actively working on are listed here.
+                </p>
+            </div>
+        </section>
+
+        <!-- ========== 5. PROJECTS ========== -->
+        <section class="section projects-section" id="projects">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">SELECTED WORK</span>
+                    <h2>Projects That <span class="gradient-text">Matter.</span></h2>
+                    <p>Some of the projects I have built while learning.</p>
+                </div>
+
+                <!-- Projects are rendered by js/script.js -->
+                <div class="projects-grid" id="projects-grid"></div>
+
+                <div class="projects-actions" id="projects-actions">
+                    <button type="button" class="btn btn-primary" id="open-project-modal">
+                        <i class="fa-solid fa-plus"></i>
+                        Add Project
+                    </button>
+
+                    <!-- Shown only when some default projects have been removed -->
+                    <button type="button" class="btn btn-outline" id="restore-projects" hidden>
+                        <i class="fa-solid fa-rotate-left"></i>
+                        Restore Removed Projects
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 6. SERVICES ========== -->
+        <section class="section services-section" id="services">
+            <div class="container">
+                <div class="section-heading reveal">
+                    <span class="eyebrow">WHAT I CAN DO</span>
+                    <h2>Services & <span class="gradient-text">Solutions.</span></h2>
+                    <p>Services I offer to clients and businesses.</p>
+                </div>
+
+                <div class="services-grid">
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <h3>Website Design</h3>
+                        <p>Clean and modern designs that present your brand professionally.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-mobile-screen-button"></i>
+                        <h3>Responsive Website Development</h3>
+                        <p>Websites that work smoothly on phones, tablets and desktops.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-rocket"></i>
+                        <h3>Landing Page Development</h3>
+                        <p>Focused landing pages that help you turn visitors into customers.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-building"></i>
+                        <h3>Business Websites</h3>
+                        <p>Professional websites for shops, institutes and small businesses.</p>
+                    </article>
+
+                    <article class="service-card reveal">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Frontend Development</h3>
+                        <p>Interactive interfaces built with HTML, CSS, JavaScript and React.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========== 7. CONTACT ========== -->
+        <section class="section contact-section" id="contact">
+            <div class="container">
+
+                <div class="section-heading reveal">
+                    <span class="eyebrow">GET IN TOUCH</span>
+                    <h2>Let's Build Something <span class="gradient-text">Great.</span></h2>
+                    <p>Have a project, idea or opportunity? Send me a message.</p>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-info reveal">
+
+                        <a href="mailto:hafizhamzaashraf295@email.com" class="contact-item">
+                            <i class="fa-solid fa-envelope"></i>
+                            <div>
+                                <strong>Email</strong>
+                                <span>hafizhamzaashraf295@email.com</span>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/hafiz-hamza-015848448" target="_blank"
+                            rel="noopener noreferrer" class="contact-item">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                            <div>
+                                <strong>LinkedIn</strong>
+                                <span>hafiz-hamza-015848448</span>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/MUHAMMADAHMADMUGHAL" target="_blank" rel="noopener noreferrer"
+                            class="contact-item">
+                            <i class="fa-brands fa-github"></i>
+                            <div>
+                                <strong>GitHub</strong>
+                                <span>MUHAMMADAHMADMUGHAL</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/923290065198" target="_blank" rel="noopener noreferrer"
+                            class="contact-item">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>+92 329 0065198</span>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <form class="contact-form reveal" id="contact-form" action="https://api.web3forms.com/submit"
+                        method="POST">
+                        <input type="hidden" name="access_key" value="78eec1e5-61a8-4530-8778-f3302da7ed6d">
+                        <input type="hidden" name="subject" value="New message from your portfolio">
+                        <input type="hidden" name="redirect" value="https://YOUR-PROJECT.vercel.app/#contact">
+                        <input type="checkbox" name="botcheck" style="display:none">
+
+                        <label>
+                            Your Name
+                            <input type="text" name="name" required placeholder="Your name">
+                        </label>
+
+                        <label>
+                            Your Email
+                            <input type="email" name="email" required placeholder="you@example.com">
+                        </label>
+
+                        <label>
+                            Message
+                            <textarea name="message" rows="5" required
+                                placeholder="Tell me about your project..."></textarea>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary">
+                            Send Message
+                            <i class="fa-solid fa-paper-plane"></i>
+                        </button>
+
+                        <p class="form-note">
+                            Your message will be sent directly to my inbox.
+                        </p>
+                    </form>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========== ADD PROJECT MODAL ========== -->
+    <div class="modal" id="project-modal" hidden>
+        <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <div class="modal-head">
+                <h3 id="modal-title">Add New Project</h3>
+                <button type="button" class="modal-close" id="close-project-modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+
+            <form id="project-form" class="project-form">
+                <label>
+                    Project Title *
+                    <input type="text" name="title" maxlength="60" required placeholder="e.g. Portfolio Website">
+                </label>
+
+                <div class="form-row">
+                    <label>
+                        Category
+                        <input type="text" name="category" maxlength="20" placeholder="WEB APP">
+                    </label>
+
+                    <label>
+                        Icon
+                        <select name="icon">
+                            <option value="fa-code">Code</option>
+                            <option value="fa-calculator">Calculator</option>
+                            <option value="fa-chart-line">Chart</option>
+                            <option value="fa-cart-shopping">Shop</option>
+                            <option value="fa-laptop-code">Laptop</option>
+                            <option value="fa-mobile-screen">Mobile</option>
+                            <option value="fa-database">Database</option>
+                            <option value="fa-user-lock">Login</option>
+                        </select>
+                    </label>
+                </div>
+
+                <label>
+                    Description
+                    <textarea name="description" rows="3" maxlength="200"
+                        placeholder="Short description of the project"></textarea>
+                </label>
+
+                <label>
+                    Tags (comma separated)
+                    <input type="text" name="tags" placeholder="HTML, CSS, JavaScript">
+                </label>
+
+                <label>
+                    Live Demo Link
+                    <input type="url" name="live" placeholder="https://...">
+                </label>
+
+                <div class="form-row">
+                    <label>
+                        Card Color
+                        <input type="color" name="color" value="#3B82F6">
+                    </label>
+
+                    <label>
+                        Screenshot (max 2 MB)
+                        <input type="file" name="image" accept="image/*">
+                    </label>
+                </div>
+
+                <p class="form-error" id="form-error"></p>
+
+                <div class="form-actions">
+                    <button type="button" class="btn btn-outline" id="cancel-project">Cancel</button>
+                    <button type="submit" class="btn btn-primary">Save Project</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- ========== 8. FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#home" class="logo">HAFIZ<span class="accent">.</span>DEV</a>
+
+            <div class="footer-socials">
+                <a href="https://github.com/MUHAMMADAHMADMUGHAL" target="_blank" rel="noopener noreferrer"
+                    aria-label="GitHub">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/hafiz-hamza-015848448" target="_blank" rel="noopener noreferrer"
+                    aria-label="LinkedIn">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:hafizhamzaashraf295@email.com" aria-label="Email">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+            </div>
+
+            <a href="#home" class="back-to-top" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>&copy; <span id="year"></span> HAFIZ MUHAMMAD HAMZA. All rights reserved.</p>
+            <p>Built with HTML, CSS & JavaScript.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
